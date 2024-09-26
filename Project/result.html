@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer - Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .summary {
+            margin-top: 20px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .charts {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Summary</h1>
+        <div class="summary">
+            <h3>Original Text:</h3>
+            <p>{{ text }}</p>
+            <h3>Summary:</h3>
+            <p>{{ summary }}</p>
+        </div>
+        <div class="charts">
+            <h2 class="text-center">Visualizations</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="text-center">Word Cloud</h3>
+                    <img src="/static/wordcloud.png" alt="Word Cloud">
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-center">Top 10 Words by Frequency</h3>
+                    <img src="/static/barchart.png" alt="Bar Chart">
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-center">Top 10 Words Frequency Distribution</h3>
+                    <img src="/static/piechart.png" alt="Pie Chart">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

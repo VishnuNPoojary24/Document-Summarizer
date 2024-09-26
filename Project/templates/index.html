@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #333; /* Dark background color */
+            color: #fff; /* Light text color */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .form-control {
+            background-color: #444; /* Darker input background color */
+            color: #fff; /* Light text color for inputs */
+            border: 1px solid #666; /* Darker border color */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Blue primary button color */
+            border-color: #007bff; /* Blue primary button border color */
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3;
+        }
+        .about {
+            background-color: #444; /* Darker background for about section */
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .about h2 {
+            color: #007bff; /* Blue color for headers */
+        }
+        .about p, .about ul {
+            color: #ddd; /* Light grey text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Document Summarizer</h1>
+        <form action="/summarize" method="post">
+            <div class="form-group">
+                <label for="text">Enter your text:</label>
+                <textarea class="form-control" id="text" name="text" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Summarize</button>
+        </form>
+        <div class="about">
+            <h2>About Us</h2>
+            <p>This is an NLP project created by 6 - AIDS students for assignment purposes under the guidance of Miss. Sandra Jeyes.</p>
+            <h2>Implementation</h2>
+            <p>Our Text Summarizer uses Natural Language Processing (NLP) techniques to generate concise summaries from input text. It includes features like:</p>
+            <ul>
+                <li>Tokenization and Lemmatization using NLTK</li>
+                <li>TextRank algorithm for sentence extraction</li>
+                <li>Word cloud, bar chart, and pie chart visualizations</li>
+            </ul>
+            <h2>Team Members</h2>
+            <ul>
+                <li>Vishnu N Poojary</li>
+                <li>Manoj M</li>
+                <li>Vilas A B</li>
+                <li>Vaishnavi P</li>
+                <li>Anjali Shetty</li>
+                <li>Prajna</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
